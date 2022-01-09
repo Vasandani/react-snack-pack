@@ -1,5 +1,0 @@
-import { HookName.CamelCase } from "./HookName.CamelCase.js";
-
-export { 
-  HookName.CamelCase,
-};
