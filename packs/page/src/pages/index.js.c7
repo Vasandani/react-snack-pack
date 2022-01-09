@@ -1,0 +1,5 @@
+import { PageName.PascalCase } from "./PageName.PascalCase/PageName.PascalCase.js";
+
+export { 
+  PageName.PascalCase,
+};

@@ -1,0 +1,8 @@
+import React from "react";
+
+// TODO: write HookName.LowerCase description
+export const HookName.CamelCase = () => {
+  const [state, setState] = React.useState();
+
+  return state;
+}

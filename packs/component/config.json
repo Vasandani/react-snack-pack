@@ -1,0 +1,59 @@
+{
+  "id": "component",
+  "options": {
+    "MatchCase": false,
+    "MatchPath": true,
+    "AllowVars": true
+  },
+  "operations": [
+    {
+      "type": "CREATE",
+      "path": "src\\components\\ComponentName.PascalCase\\ComponentName.PascalCase.css",
+      "template": "src\\components\\ComponentName.PascalCase\\ComponentName.PascalCase.css"
+    },
+    {
+      "type": "CREATE",
+      "path": "src\\components\\ComponentName.PascalCase\\ComponentName.PascalCase.js",
+      "template": "src\\components\\ComponentName.PascalCase\\ComponentName.PascalCase.js"
+    },
+    {
+      "type": "MODIFY",
+      "path": "src\\components\\index.js",
+      "inserts": [
+        {
+          "template": "src\\components\\index.js.1",
+          "options": {
+            "lineStart": 1,
+            "colStart": 0
+          }
+        },
+        {
+          "template": "src\\components\\index.js.2",
+          "options": {
+            "lineStart": 4,
+            "colStart": 0
+          }
+        }
+      ],
+      "ifEmpty": {
+        "type": "CREATE",
+        "path": "src\\components\\index.js",
+        "template": "src\\components\\index.js"
+      }
+    }
+  ],
+  "params": [
+    [
+      "ComponentName.LowerCase",
+      "name.lowercase"
+    ],
+    [
+      "ComponentName.UpperCase",
+      "name.uppercase"
+    ],
+    [
+      "ComponentName.PascalCase",
+      "name.pascalcase"
+    ]
+  ]
+}
